@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLife - Sustainable Living</title>
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('https://img.freepik.com/premium-photo/green-ecolife-icon_200480-545.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #1c5b36df;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+        }
+
+        .content-container {
+            background-color: rgba(255, 255, 255, 0.668);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color:  #1c5b36df;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover{
+            background-color: #73a773f7;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+        }
+        .feature {
+            padding: 20px;
+            background-color: #9ed4afeb;
+            border-radius: 5px;
+            width: 30%;
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                width: 80%;
+            }
+        }
+
+        /* Further responsiveness for small screens */
+        @media (max-width: 480px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EcoLife - Sustainable Living</h1>
+        <p>Join us in creating a greener, healthier planet.</p>
+    </header>
+   
+    <div class="content-container">
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="flex-container">
+            <div class="feature">Eco-Friendly Products</div>
+            <div class="feature">Sustainable Energy Solutions</div>
+            <div class="feature">Community Initiatives</div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>EcoLife is dedicated to promoting sustainable living through eco-friendly products, renewable energy, and community-driven projects.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@ecolife.com</p>
+        <a href = "mailto:support@ecolife.com" class="button"> Get in Touch</a>
+    </section>
+</div>
+</body>
+</html>
